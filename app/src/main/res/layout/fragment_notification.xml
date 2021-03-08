@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NotificationFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Notifications"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="3sp"
+        android:textColor="#2E314B"
+        android:background="#93C97F"
+        android:inputType="textMultiLine"
+        android:layout_gravity="top"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notifRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

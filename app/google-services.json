@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "310523148244",
+    "firebase_url": "https://welink-9613d.firebaseio.com",
+    "project_id": "welink-9613d",
+    "storage_bucket": "welink-9613d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310523148244:android:c09f85e8e3b6faad898841",
+        "android_client_info": {
+          "package_name": "com.example.welink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310523148244-5egtdo5983hqhe2sbbo6g86qf7ffb7k9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.welink",
+            "certificate_hash": "a4cd667b88f2f1398928cba95c0e5ec09080a6fd"
+          }
+        },
+        {
+          "client_id": "310523148244-he3bnnq1vde50lstrq5pcu397rmlg6em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz8EDvSedx3HRllG641XIWMImLMl_DssY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310523148244-he3bnnq1vde50lstrq5pcu397rmlg6em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

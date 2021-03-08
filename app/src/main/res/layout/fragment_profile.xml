@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#93C97F">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarSettings">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/updateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="#0B103D"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/logoutText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGOUT"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#090E3F"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageUpdate"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pro"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/emailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : someone@gmail.com"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Name :"
+            android:layout_marginTop="24dp"/>
+        <EditText
+            android:layout_weight="4"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/nameUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="someone@gmail.com"
+            android:layout_marginTop="24dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Occupation :"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:layout_marginLeft="8dp"
+            android:layout_weight="4"
+            android:id="@+id/occupationUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="8dp"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Phone :"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/phoneUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43545636"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/genderEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender : someone@gmail.com"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Age :"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/ageUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="44"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

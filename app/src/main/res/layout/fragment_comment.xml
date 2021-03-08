@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CommentFragment">
+
+    <TextView
+        android:id="@+id/commentAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Comment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commentAdd"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/uploadCv"/>
+
+    <ImageButton
+        android:id="@+id/selectFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pdf"
+        android:layout_above="@+id/commentInput"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/uploadCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_round_button"
+        android:text="Upload Cv"
+        android:layout_alignBottom="@+id/commentBtn"
+        android:layout_above="@id/commentInput"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"/>
+    <EditText
+        android:id="@+id/commentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/post_border"
+        android:padding="15dp"
+        android:hint="Add a comment...."
+        android:inputType="textMultiLine"/>
+
+    <ImageButton
+        android:id="@+id/post_comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/commentInput"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/send" />
+
+
+</RelativeLayout>

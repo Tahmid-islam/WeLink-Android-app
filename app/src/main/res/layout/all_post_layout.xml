@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/post_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pro"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/post_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:padding="2dp">
+                    <TextView
+                        android:id="@+id/postedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posted on "
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/postedDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/postedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="post description"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:padding="3dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:id="@+id/commentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_round_button"
+                android:text="Add Comment"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
